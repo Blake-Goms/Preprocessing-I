@@ -1,1 +1,302 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.bold {
+  font-weight: bold;
+}
+.font-style {
+  font-family: 'Ubuntu', sans-serif;
+}
+.basic-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  width: 1920px;
+  background-color: slategrey;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    max-width: 100%;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+}
+nav a:link {
+  color: black;
+}
+nav a:visited {
+  color: black;
+}
+nav a:hover {
+  color: lightgrey;
+}
+nav a:active {
+  color: lightblue;
+}
+@media only screen and (max-width: 500px) {
+  nav {
+    font-size: 1.2rem;
+    font-weight: normal;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav a {
+    text-decoration: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+}
+.top-content {
+  margin: 0 auto;
+  max-width: 60%;
+  background-color: lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 15px;
+  font-size: 1.5rem;
+  padding: 15px;
+  box-shadow: 3px 3px 3px #888888;
+  font-family: 'Ubuntu', sans-serif;
+}
+.top-content .p1 {
+  font-size: 3rem;
+}
+.top-content p {
+  padding: 15px;
+  font-size: 1.8rem;
+}
+.top-content img {
+  max-width: 40%;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.top-content .Look {
+  background-color: silver;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+@media only screen and (max-width: 500px) {
+  .top-content .p1 {
+    font-size: 1.5rem;
+  }
+  .top-content p {
+    font-size: 1.2rem;
+  }
+  .top-content .Look {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+}
+.abilities {
+  font-size: 3rem;
+  text-align: center;
+  padding: 30px 0;
+}
+.abilities .images {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 15px;
+}
+.abilities .images .child {
+  width: 15%;
+  height: 15%;
+}
+@media only screen and (max-width: 500px) {
+  .abilities {
+    font-size: 1.8rem;
+  }
+  .abilities .images {
+    margin: 0 10px;
+  }
+}
+table,
+th,
+td {
+  padding: 10px;
+}
+table {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+  height: 40%;
+  padding: 10px;
+  box-shadow: 3px 3px 3px #888888;
+}
+@media only screen and (max-width: 500px) {
+  table {
+    font-size: 1.2rem;
+  }
+}
+table#t01 tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+table#t01 tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+.contact {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+footer {
+  background-color: lightgrey;
+  box-shadow: 3px 3px 3px #888888;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 40%;
+  text-align: center;
+  font-size: 1.2rem;
+}
