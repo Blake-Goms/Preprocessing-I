@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,13 +6,99 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <title>My Resume</title>
+    <nav>
+        <a href="index.html">Home</a>
+        <!-- Stretch Goal, linking to portfolio -->
+        <a href="https://blake-goms.github.io/">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+  </header>
+
+    <!-- INTRODUCTION -->
+    <section class = "intro">
+      <div class = "top-content">
+          <img src= "working.jpg" alt="Myself Programming!">
+          <p class = "p1">
+            Blake Goms - Full Stack Web Dev
+          </p>
+          <p>
+            Deploying Websites is my jam!
+          </p>
+          <p>
+            Occasionally I like to work on personal projects, click below to check my Github!
+          </p>
+          <button class="Look">Take a Look!</button>
+      </div>
+    </section>
+    
+    <!-- SKILLS -->
+    <section class = "skills">
+      <div class = "abilities">
+        <p>
+          Languages I am Proficient At!
+        </p>
+        <div class = "images">
+        <img class = "child 1" src = "python.png" alt = "Python logo">
+        <img class = "child 2" src = "html5-css3.jpg" alt = "Html and css3 logo">
+        <img class = "child 3" src = "c++.png" alt = "C++ logo">
+        <img class = "child 4" src = "Javascript.png" alt = "Javascript logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK HISTORY -->
+    <section class = "work">
+      <div class = "table">
+          <table id="t01">
+              <caption>Monthly savings</caption>
+              <tr>
+                <th>Years</th>
+                <th>Company</th> 
+                <th>Title</th>
+                <th>Tech Used</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Amazon</td> 
+                <td>Jr. Front-End Dev</td>
+                <td>Node.js</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Google</td> 
+                <td>Front-End Dev</td>
+                <td>React</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Microsoft</td> 
+                  <td>Full Stack Dev</td>
+                  <td>Python</td>
+                </tr>
+            </table>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact">
+      <div class="info">
+        <p>Contact Information</p>
+        <p>123-456-7890</p>
+        <a href="blakegoms@gmail.com">Email Me!</a>
+      </div>
+    </section>  
+
+    <footer>
+      <p>Copyright 2019!</p>
+    </footer>
 </body>
 </html>
